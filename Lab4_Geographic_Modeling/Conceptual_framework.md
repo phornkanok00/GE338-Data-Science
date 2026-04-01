@@ -25,7 +25,7 @@
 * Fuel Density = 0.424
 * History = 0.412
 
-เมื่อทำให้ค่าเป็น 1 จะได้ดังนี้ w = [0.25, 0.30, 0.23, 0.22]  เรียงลำดับตาม [Dryness, Heat, Fuel Density, History]
+เมื่อทำให้ค่าเป็น 1 จะได้ดังนี้ weight = [0.25, 0.30, 0.23, 0.22]  เรียงลำดับตาม [Dryness, Heat, Fuel Density, History]
 
 ## Validate
 
