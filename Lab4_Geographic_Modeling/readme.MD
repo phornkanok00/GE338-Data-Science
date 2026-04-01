@@ -3,7 +3,7 @@
 
 ## การสร้างและรัน Spatial Model
 
-_1. การ Normalize แต่ละ Factor_
+**1. การ Normalize แต่ละ Factor**
 - ข้อมูล LST จาก MODIS ได้มีการ - MODIS LST ให้ค่า Kelvin × 0.02 → ต้องแปลงเป็นช่วง 0–1 เพื่อให้สเกลเท่ากัน, ปรับunitScale(min, max) → (value - min) / (max - min) และ clamp(0,1) → กันค่าเกินขอบเขต
 - ข้อมูล NDVI 0–0.8 แทนความหนาแน่นของพืชยิ่งเขียว → เชื้อเพลิงเยอะ → เสี่ยงสูง จากนั้นทำการ Normalization ทำให้สเกล 0–1 เพื่อเอามารวม AHP ได้
 - NDMI ใช้สูตร.unitScale(-0.5, 0.5).subtract(1).multiply(-1).clamp(0,1) คือ invert และ scale ให้:dryness_norm = 1 - ((NDMI - (-0.5)) / (0.5 - (-0.5))) แปลว่ายิ่งแห้ง → ค่ามาก → เสี่ยงสูง
