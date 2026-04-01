@@ -71,7 +71,7 @@ Risk > 0.40 → Class 3 → High Risk (Red)
 
 1.4 รวม Weighted Sum (Risk Score) และแบ่ง Threshold ใหม่ตาม distribution หรือ pattern ของปีนั้น
 
-- ขั้นตอนที่คงที่
+- ขั้นตอนที่ต้องคงที่ คือ
 
 2.1 การกำหนด สูตรคำนวณ Risk Score (weighted sum)
 
